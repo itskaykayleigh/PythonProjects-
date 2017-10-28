@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1 id="kk"><center>Predicting Cuisine Based on Ingredients</center></h1>		
+		<h3 id="in"><center>Easy! All I ask is 5 ingredients :)</center></h2>
+		<h3 id="in"><center>Wait...maybe some not-so-common ones</center></h2>
+		<h3 id='ingredient1'><center>Ingredient 1</center></h3>
+		<center><input type="text" id="inputBox1" value="chocolate"></input></center>
+		<h3 id='ingredient2'><center>Ingredient 2</center></h3>
+		<center><input type="text" id="inputBox2" value="chocolate"></input></center>
+		<h3 id='ingredient3'><center>Ingredient 3</center></h3>
+		<center><input type="text" id="inputBox3" value="chocolate"></input></center>
+		<h3 id='ingredient4'><center>Ingredient 4</center></h3>
+		<center><input type="text" id="inputBox4" value="chocolate"></input></center>
+		<h3 id='ingredient5'><center>Ingredient 5</center></h3>
+		<center><input type="text" id="inputBox5" value="chocolate"></input></center>
+		<br>
+		<br>
+		<center><button id="botton" onclick="predict_cuisine()">What's Cooking Now?</button></center>
+		<br>
+		<br>
+		<br>
+		<center><p><div id="output">?</div></p></center>
+
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
+		<script>
+			
+			function predict_cuisine(){
+				ingredient1 = document.getElementById("inputBox1").value
+				ingredient2 = document.getElementById("inputBox2").value
+				ingredient3 = document.getElementById("inputBox3").value
+				ingredient4 = document.getElementById("inputBox4").value
+				ingredient5 = document.getElementById("inputBox5").value
+
+		       $.ajax({
+		         type: "POST",
+		         contentType: "application/json; charset=utf-8",
+		         url: "/predictcuisine",
+		         dataType: "json",
+		         async: true,
+		         data: "{\"example\": [\""+ingredient1+"\",\""+ingredient2+"\",\""+ingredient3+"\",\""+ingredient4+"\",\""+ingredient5+"\"]}",
+		         success: function (results) {
+		         	cuisine=results["cuisines"]
+		         	if (cuisine == 'greek') {
+		         		document.getElementById("output").textContent = "Greek Greek Greek"
+		         	} else if (cuisine == 'chinese') {
+		         		document.getElementById("output").textContent = "Chinese! Yummmm:)"
+		         	} else if (cuisine == 'italian') {
+		         		document.getElementById("output").textContent = "Ready for more pizza and cheese?"
+		         	} else if (cuisine == 'southern_us') {
+		         		document.getElementById("output").textContent = "Love some Southern US food!!"
+		         	} else if (cuisine == 'filipino') {
+		         		document.getElementById("output").textContent = "Filipino right?!"
+		         	} else if (cuisine == 'indian') {
+		         		document.getElementById("output").textContent = "Indian it is!!"
+		         	} else if (cuisine == 'jamaican') {
+		         		document.getElementById("output").textContent = "Taste of Jamaican!!"
+		         	} else if (cuisine == 'spanish') {
+		         		document.getElementById("output").textContent = "Can't wait for some Spanish food!!"
+		         	} else if (cuisine == 'mexican') {
+		         		document.getElementById("output").textContent = "Mexican it is!!"
+		         	} else if (cuisine == 'irish') {
+		         		document.getElementById("output").textContent = "Man, it's Irish!!"
+		         	} else if (cuisine == 'british') {
+		         		document.getElementById("output").textContent = "Wow it's British!!"
+		         	} else if (cuisine == 'thai') {
+		         		document.getElementById("output").textContent = "Totally Thai!!"
+		         	} else if (cuisine == 'vietnamese') {
+		         		document.getElementById("output").textContent = "Vietnamese!!"
+		         	} else if (cuisine == 'cajun_creole') {
+		         		document.getElementById("output").textContent = "Gotta be Cajun!!"
+		         	} else if (cuisine == 'brazilian') {
+		         		document.getElementById("output").textContent = "Braziliannnnnnn!!"
+		         	} else if (cuisine == 'french') {
+		         		document.getElementById("output").textContent = "Bon appétit :)"
+		         	} else if (cuisine == 'japanese') {
+		         		document.getElementById("output").textContent = "Sushi please!!"
+		         	} else if (cuisine == 'korean') {
+		         		document.getElementById("output").textContent = "Would love some Korean BBQ!!"
+		         	} else if (cuisine == 'moroccan') {
+		         		document.getElementById("output").textContent = "Very mysterious, Moroccan!!"
+		         	} else if (cuisine == 'russian') {
+		         		document.getElementById("output").textContent = "Russian it is"
+		         	} else {
+		         		document.getElementById("output").textContent = "ummm... wait a second, hodgepodge doesn't count >.<"
+		         	}
+		         },
+		         error: function (result) {
+		         }
+		       })
+		     }
+	
+</script>
+</body>
+</html>
