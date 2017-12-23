@@ -1,13 +1,13 @@
-This repo is for a project that builds a personalized email system which automatically grouping emails into different buckets.                  
+This repo is for a project on building a personalized email management system which automatically groups emails into different buckets based on email content.                   
 
-The objective of the project/product is to assist people in more effectively manage emails and focus on their own prioritize. 
+The objective of the product is to help people work more efficiently and effectively by making it possible to prioritize emails that matter the most to users. 
 
-Data:
+**Data:**
  * Source: https://www.cs.cmu.edu/~enron/
  * Data: Enron Email Dataset 
  * Storage: MongoDB
 
-Key skills:
+**Key skills:**
  * Unsupervised Learning 
 	* Clustering 
 		* K-Means 
@@ -15,6 +15,7 @@ Key skills:
 		* LDA 
 		* PCA (LSA, SVD)
 		* NMF 
+
  * Natural Language Processing 
 	* NLTK 
 	* SpaCy
@@ -22,25 +23,12 @@ Key skills:
 	* Count Vectorizer 
 	* TF-IDF Vectorizer 
 
-Results & Findings:
-If given some emails, the automated pipeline will auto-categorize the emails into 2-4 groups based on email content. Each set of emails will end up with different groups. For instance, a personal email account will differs from a work email.
+**Key Tools/Packages:**
+* Pandas, Numpy, Matplotlib, Seaborn   
+* NLTK, SpaCy, TextBlob   
+* Scikit-Learn  
+	* TSNE, KMeans, Normalizer, CountVectorizer, LatentDirichletAllocation, NMF, PCA, TruncatedSVD
 
-
-----------------------------------------------Table of Contents------------------------------------------------
-The repo contains five sections - Code, Data, Visuals, Presentation.
-
-Code:
- * Pipeline
- * EDA
- * Modeling 
- * Pipeline testing  
-
-Data:
- * Some transformed sample data after preprocessing and topic modeling  
-
-Images:
- * Word cloud 
-
-Presentation:
- * Presentation slides (pdf)
+**Results & Findings:**
+If given some emails, the automated pipeline will auto-categorize the emails into 2-4 groups based on email content. Each set of emails will end up with different groups. For instance, a personal email account will differ from a work email.
 
