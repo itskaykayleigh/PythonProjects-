@@ -1,37 +1,37 @@
-This repo is for a project on building a personalized email management system which automatically groups emails into different buckets based on email content.  
+This project is about an image-based fashion recommender that can be served as a smarter search engine.
 
 To read more about this project, click the link below:   
-https://www.kayleighli.space/natural-language-processing-personalized-email-management/ 
+https://www.kayleighli.space/convolutional-neural-network-imagebased-fashion-recommender/
+To see a demo of the fashion recommender, click the link below:   
+https://www.youtube.com/watch?v=HsqLlDyTUu8
 
-The objective of the product is to help people work more efficiently and effectively by making it possible to prioritize emails that matter the most to users. 
+The objective of the recommender is to: 
+1). Train a model to recognize clothing from an image, and 
+2). Build a recommender that can recommend clothing based on images that share similar fashion styles 
 
 **Data:**
  * Source: https://www.cs.cmu.edu/~enron/
- * Data: Enron Email Dataset 
- * Storage: MongoDB
+ * Data: DeepFashion 
+ * Storage: AWS 
 
 **Key skills:**
- * Unsupervised Learning 
-	* Clustering 
-		* K-Means 
-	* Dimensionality Reduction & Topic Modeling
-		* LDA 
-		* PCA (LSA, SVD)
-		* NMF 
-
- * Natural Language Processing 
-	* NLTK 
-	* SpaCy
-	* TextBlob 
-	* Count Vectorizer 
-	* TF-IDF Vectorizer 
+ * Image processing 
+ 	* Image recognition 
+	* Image similarity comparison 
+ * Deep learning 
+ 	* Convolutional Neural Network
+	* Image2Vec ("Style2Vec") 
 
 **Key Tools/Packages:**
-* Pandas, Numpy, Matplotlib, Seaborn   
-* NLTK, SpaCy, TextBlob   
-* Scikit-Learn  
-	* TSNE, KMeans, Normalizer, CountVectorizer, LatentDirichletAllocation, NMF, PCA, TruncatedSVD
+* Python
+* AWS
+* Keras & TensorFlow (*PyTorch for 1st round of modeling) 
+* Nearest Neighbors 
+* PCA 
+
+**Machine Learnring problem:**
+Image detection   
+Image-based recommender system
 
 **Results & Findings:**
-If given some emails, the automated pipeline will auto-categorize the emails into 2-4 groups based on email content. Each set of emails will end up with different groups. For instance, a personal email account will differ from a work email.
-
+Not only can it be used as search engine for online shopping, it can also be applicable to any domain that needs image content detection, tagging or image-based recommendations.   
