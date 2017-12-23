@@ -22,10 +22,11 @@ The objective of the recommender is to:
  * Deep learning 
  	* Convolutional Neural Network
 	* Image2Vec ("Style2Vec") 
+	* Transfer Learning & Fine Tuning 
 
 **Key Tools/Packages:**   
 * Python
-* AWS
+* AWS (Used GPUs for model training) 
 * Keras & TensorFlow (*PyTorch for 1st round of modeling) 
 * Nearest Neighbors 
 * PCA 
@@ -34,5 +35,5 @@ The objective of the recommender is to:
 Image detection     
 Image-based recommender system
 
-**Results & Findings:**
-Not only can it be used as search engine for online shopping, it can also be applicable to any domain that needs image content detection, tagging or image-based recommendations.   
+**Results & Findings:**   
+The model is able to classify fashion images into 10 different fashion classes, such as coat, jacket, pants, dress, skirt and etc, with an accuracy of 95%. Given an image of any style in any background, the fashion recommender was able to return 3 images of clothing in simiar styles as recommendations. 
