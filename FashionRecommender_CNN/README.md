@@ -5,9 +5,9 @@ https://www.kayleighli.space/convolutional-neural-network-imagebased-fashion-rec
 To see a demo of the fashion recommender, click the link below:   
 https://www.youtube.com/watch?v=HsqLlDyTUu8
 
-The objective of the recommender is to: 
-1). Train a model to recognize clothing from an image, and 
-2). Build a recommender that can recommend clothing based on images that share similar fashion styles 
+The objective of the recommender is to:   
+1). Train a model to recognize clothing from an image, and   
+2). Build a recommender that can recommend clothing based on images that share similar fashion styles   
 
 **Data:**
  * Source: https://www.cs.cmu.edu/~enron/
