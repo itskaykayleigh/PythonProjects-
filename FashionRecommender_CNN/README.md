@@ -10,12 +10,12 @@ The objective of the recommender is to:
 	1). Train a model to recognize clothing from an image, and   
 	2). Build a recommender that can recommend clothing based on images that share similar fashion styles   
 
-**Data:**
+**Data:**   
  * Source: http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html
  * Data: DeepFashion 
  * Storage: AWS 
 
-**Key skills:**
+**Key skills:**    
  * Image processing 
  	* Image recognition 
 	* Image similarity comparison 
@@ -23,15 +23,15 @@ The objective of the recommender is to:
  	* Convolutional Neural Network
 	* Image2Vec ("Style2Vec") 
 
-**Key Tools/Packages:**
+**Key Tools/Packages:**   
 * Python
 * AWS
 * Keras & TensorFlow (*PyTorch for 1st round of modeling) 
 * Nearest Neighbors 
 * PCA 
 
-**Machine Learnring problem:**
-Image detection   
+**Machine Learnring problem:**   
+Image detection     
 Image-based recommender system
 
 **Results & Findings:**
