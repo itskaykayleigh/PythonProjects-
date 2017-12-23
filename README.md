@@ -4,7 +4,7 @@
 These will be my forays into learning Python for data science.   
 Each project will be tracked here with a quick note about what the project does. 
 
-Below is a highlight of each project: 
+Below are some highlights of each project: 
 
 **1. Image-Based Fashion Recommender**
 An image-based style recommender on top of a clothing classification system (95% accuracy) employing Convolutional Neural Network and Nearest Neighbors leveraging AWS and Keras with TensorFlow as backend. A demo of the recommender can be found under "Flask_App". The recommender can be used as a more effective search engine. It can also be applied to any domain that needs image content detection, tagging or image-based recommendations. 
