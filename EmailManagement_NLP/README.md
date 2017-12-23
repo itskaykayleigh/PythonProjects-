@@ -1,6 +1,7 @@
 This repo is for a project on building a personalized email management system which automatically groups emails into different buckets based on email content.  
 
-To read more about this project, click the link: https://www.kayleighli.space/natural-language-processing-personalized-email-management/ 
+To read more about this project, click the link below:   
+https://www.kayleighli.space/natural-language-processing-personalized-email-management/ 
 
 The objective of the product is to help people work more efficiently and effectively by making it possible to prioritize emails that matter the most to users. 
 
