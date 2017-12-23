@@ -1,15 +1,18 @@
  
 This repo is for an ingredient-based cuisine classification project.
 
+To read more about this project, click the link below:  
+https://www.kayleighli.space/supervised-ml-cuisine-classification/
+
 The project objective is using information scraped/downloaded from the web along with supervised machine learning techniques to gain insights from classifying cuisines based on ingredients. A flask app is also included in the repo to showcase the findings.
 
-** Data:** 
+**Data:** 
  * Acquisition: flatfile download  
  * Source: Kaggle 
  * Data: 39,774 recipes from 20 countries (in total 90,000+ ingredients) 
  * Storage: PostgreSQL 
  
-** Key skills:** 
+**Key skills:** 
  * Basics of the web (requests, HTML, CSS) 
  * Supervised machine learning 
  * SQL
