@@ -1,7 +1,7 @@
 This project is about an image-based fashion recommender that can be served as a smarter search engine.
 
 To read more about this project, click the link below:   
-https://www.kayleighli.space/convolutional-neural-network-imagebased-fashion-recommender/
+https://www.kayleighli.space/convolutional-neural-network-imagebased-fashion-recommender/   
 To see a demo of the fashion recommender, click the link below:   
 https://www.youtube.com/watch?v=HsqLlDyTUu8
 
