@@ -1,17 +1,21 @@
  
-This repo is for the second project at Metis.
-
-The project objective is using information scraped from the web to build linear regression models to learn more about movies box office revenues(with a focus on comparing 3D and non-3D movies).
+This project's objective is to predict movies domestic box office revenues (with a focus on comparing 3D and non-3D movies) employing regression algorithms using information scraped from the web.  
 
 Data:
  * Acquisition: web scraping 
  * Source: BoxOfficemojo.com 
  * Data: 391 movies (after cleaning: approximately 2/3 3D movies, 1/3 2D movies) 
-Key skills: 
- * Basics of the web (requests, HTML, CSS, JavaScript) 
- * Web scraping (BeautifulSoup and Selenium) 
- * numpy and pandas 
- * statsmodels, scikit-learn 
+ 
+Key Tools/Packages:
+* BeautifulSoup
+* Pandas, Numpy, Matplotlib, Seaborn 
+* Scikit-Learn
+  * Train/Test Split, GridSearchCV, Cross Validation, StandardScaler, Linear Regression, Ridge Regression, Lasso Regression, Elastic Regression
+* Statsmodels 
+* Scipy (Normaltest) 
+
+Machine Learning problem:   
+Supervised - Regression
 
 Analysis: 
  * Linear Regression 
@@ -19,23 +23,3 @@ Analysis:
  * Ridge Regression 
  * ElasticNet Regression 
  * Cross Validation
-
------------------------------------------------------------Table of Contents--------------------------------------------------------------
-The repo contains four sections - Codes, Data, Images and Presentation. 
-
-Code:
- * Data Cleaning (EDA)
- * Modeling (4 Models) 
- * Web Scraping (Preliminary & Final Draft) 
-
-Data: 
- * Pickle files 
- * Additional files 
-
-Images:
- * Model performance plots (4 models) 
-
-Presentation:
- * Presentation slides
- 
-
