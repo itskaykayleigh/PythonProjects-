@@ -1,6 +1,9 @@
  
 This project's objective is to predict movies domestic box office revenues (with a focus on comparing 3D and non-3D movies) employing regression algorithms using information scraped from the web.  
 
+To read more about this project, click the link below:   
+https://www.kayleighli.space/new-blog-1/ 
+
 **Data:**
  * Acquisition: web scraping 
  * Source: BoxOfficemojo.com 
